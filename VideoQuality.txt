@@ -1,0 +1,40 @@
+///// Quality /////
+
+/// High 
+
+- CQ: 20
+- FPS: 30  
+- Resolution: 720p 
+- File size: ~1500 KB <
+
+/// Medium 
+
+- CQ: 40
+- FPS: 30  
+- Resolution: 720p 
+- File size: ~500 KB < 
+
+/// Low 
+
+- CQ: 60
+- FPS: 30  
+- Resolution: 720p 
+- File size: ~100 KB < 
+
+/// Slideshow
+
+- CQ: 60
+- FPS: 15  
+- Resolution: 720p 
+- File size: ~60 KB < 
+
+/// NOTE ///
+
+- If file size exceeds the estimated maximum, then lower the resolution!
+
+/// Resolutions:
+
+- 426x240  (240p)
+- 640x360  (360p)
+- 854x480  (480p)
+- 1280x720 (720p)
