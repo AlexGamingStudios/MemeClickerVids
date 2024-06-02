@@ -5,28 +5,28 @@
 - CQ: 20
 - FPS: 30  
 - Resolution: 720p 
-- File size: ~1500 KB <
+- File size: ~1000 KB <
 
 /// Medium 
 
 - CQ: 40
 - FPS: 30  
 - Resolution: 720p 
-- File size: ~500 KB < 
+- File size: ~700 KB < 
 
 /// Low 
 
 - CQ: 60
 - FPS: 30  
 - Resolution: 720p 
-- File size: ~100 KB < 
+- File size: ~500 KB < 
 
 /// Slideshow
 
 - CQ: 60
-- FPS: 15  
+- FPS: 10  
 - Resolution: 720p 
-- File size: ~60 KB < 
+- File size: ~200 KB < 
 
 /// NOTE ///
 
