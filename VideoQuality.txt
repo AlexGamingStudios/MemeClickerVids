@@ -5,28 +5,28 @@
 - FPS: 30  
 - Bitrate: 2000k
 - Resolution: 720p 
-- File size: ~920 KB <
+- File size: ~1260 KB <
 
 /// Medium 
 
 - FPS: 30  
 - Bitrate: 1000k
 - Resolution: 720p 
-- File size: ~570 KB < 
+- File size: ~690 KB < 
 
 /// Low 
 
 - FPS: 30  
 - Bitrate: 500k
 - Resolution: 720p 
-- File size: ~350 KB < 
+- File size: ~380 KB < 
 
 /// Slideshow
 
 - FPS: 10  
 - Bitrate: 500k
 - Resolution: 720p 
-- File size: ~280 KB < 
+- File size: ~300 KB < 
 
 /// NOTE ///
 

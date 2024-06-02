@@ -21,14 +21,14 @@ if not exist "Low" mkdir "Low"
 if not exist "Medium" mkdir "Medium"
 if not exist "High" mkdir "High"
 
-:: Slideshow 
-ffmpeg -i "%input_file%" -c:v libvpx -b:v 500k -pix_fmt yuva420p -r 10 %resolution% -an -auto-alt-ref 0 "Slideshow\%~n1.webm"
+:: Slideshow (fixed at 10 fps, no audio, alpha_mode="1", remove metadata)
+ffmpeg -c:v libvpx -i "%input_file%" -b:v 500k -pix_fmt yuva420p -r 10 %resolution% -an -auto-alt-ref 0 -metadata:s:v:0 alpha_mode="1" -map_metadata -1 "Slideshow\%~n1.webm"
 
-:: Low Quality 
-ffmpeg -i "%input_file%" -c:v libvpx -b:v 500k -pix_fmt yuva420p -r 30 %resolution% -an -auto-alt-ref 0 "Low\%~n1.webm"
+:: Low Quality (fixed at 30 fps, no audio, alpha_mode="1", remove metadata)
+ffmpeg -c:v libvpx -i "%input_file%" -b:v 500k -pix_fmt yuva420p -r 30 %resolution% -an -auto-alt-ref 0 -metadata:s:v:0 alpha_mode="1" -map_metadata -1 "Low\%~n1.webm"
 
-:: Medium Quality 
-ffmpeg -i "%input_file%" -c:v libvpx -b:v 1000k -pix_fmt yuva420p -r 30 %resolution% -an -auto-alt-ref 0 "Medium\%~n1.webm"
+:: Medium Quality (fixed at 30 fps, no audio, alpha_mode="1", remove metadata)
+ffmpeg -c:v libvpx -i "%input_file%" -b:v 1000k -pix_fmt yuva420p -r 30 %resolution% -an -auto-alt-ref 0 -metadata:s:v:0 alpha_mode="1" -map_metadata -1 "Medium\%~n1.webm"
 
-:: High Quality 
-ffmpeg -i "%input_file%" -c:v libvpx -b:v 2000k -pix_fmt yuva420p -r 30 %resolution% -an -auto-alt-ref 0 "High\%~n1.webm"
+:: High Quality (fixed at 30 fps, no audio, alpha_mode="1", remove metadata)
+ffmpeg -c:v libvpx -i "%input_file%" -b:v 2000k -pix_fmt yuva420p -r 30 %resolution% -an -auto-alt-ref 0 -metadata:s:v:0 alpha_mode="1" -map_metadata -1 "High\%~n1.webm"
